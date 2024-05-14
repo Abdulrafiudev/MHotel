@@ -3,6 +3,7 @@ import "./App.css"
 import Header from "./components/header/header"
 import Intro from "./components/intro/intro"
 import Catalogue from "./components/catalogue/catalogue"
+import Display from "./components/display/display"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Intro />
       <Catalogue />
+      <Display />
     </>
   )
 }
