@@ -10,7 +10,7 @@
 .resort_1,
 .resort_2 {
   display: flex;
-  width: 90%;
+  width: 95%;
   height: 60%;
 
   justify-content: space-between;
@@ -38,7 +38,7 @@
 }
 .right_resort_section_detail {
   margin-top: 20px;
-  margin-bottom: 42.5%;
+  margin-bottom: 42%;
   line-height: 24px;
   color: #1b1919;
   font-size: 16px;
