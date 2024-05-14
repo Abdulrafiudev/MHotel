@@ -1,11 +1,13 @@
 import React from "react"
 import "./App.css"
 import Header from "./components/header/header"
+import Intro from "./components/intro/intro"
 
 function App() {
   return (
     <>
       <Header />
+      <Intro />
     </>
   )
 }

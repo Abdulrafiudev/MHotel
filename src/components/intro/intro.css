@@ -1,0 +1,28 @@
+.intro_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  gap: 15px;
+  margin-top: 150px;
+}
+.image_container {
+  width: 90%;
+  height: 100%;
+}
+.hotel_image {
+  height: 100%;
+  width: 100%;
+}
+.green_line_container {
+  width: 90%;
+  height: 5px;
+  background-color: #fcf6f5;
+}
+.green_line_piece {
+  width: 30%;
+  background-color: #2bae66;
+  height: 5px;
+  border-radius: 2px;
+}
