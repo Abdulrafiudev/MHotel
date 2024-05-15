@@ -4,6 +4,7 @@ import Header from "./components/header/header"
 import Intro from "./components/intro/intro"
 import Catalogue from "./components/catalogue/catalogue"
 import Display from "./components/display/display"
+import Calender from "./components/calender/calender"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <Catalogue />
       <Display />
+      <Calender />
     </>
   )
 }

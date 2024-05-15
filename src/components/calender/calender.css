@@ -1,0 +1,44 @@
+.calender_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 600px;
+  align-items: center;
+  justify-content: start;
+  height: 70vh;
+  width: 100%;
+
+  position: relative;
+}
+.escape_container {
+  width: 95%;
+  height: 15%;
+
+  position: relative;
+}
+.escape_container span {
+  position: absolute;
+  right: 0;
+  color: #1b1919;
+  font-weight: 600;
+  font-size: 18px;
+}
+.calender_gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 85%;
+}
+.left_calender_gallery {
+  height: 90%;
+  width: 35%;
+}
+.right_calender_gallery {
+  height: 100%;
+  width: 40%;
+  background-color: purple;
+}
+.left_calender_gallery img {
+  height: 100%;
+  width: 100%;
+}

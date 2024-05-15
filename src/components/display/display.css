@@ -52,3 +52,9 @@
   cursor: pointer;
   width: 80px;
 }
+.diplay_green_line {
+  display: block;
+  width: 95%;
+  height: 10px;
+  background-color: #2bae66;
+}

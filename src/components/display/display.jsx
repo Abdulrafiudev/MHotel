@@ -40,6 +40,9 @@ function Display() {
             <img src={resort} className="beach_image resort_image" />
           </div>
         </div>
+        <div className="diplay_green_line">
+          <div className="diplay_green_line"></div>
+        </div>
       </div>
     </>
   )
