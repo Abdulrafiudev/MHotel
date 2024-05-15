@@ -5,6 +5,7 @@ import Intro from "./components/intro/intro"
 import Catalogue from "./components/catalogue/catalogue"
 import Display from "./components/display/display"
 import Calender from "./components/calender/calender"
+import Gallery from "./components/gallery/gallery"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Catalogue />
       <Display />
       <Calender />
+      <Gallery />
     </>
   )
 }
