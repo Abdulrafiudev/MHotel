@@ -6,6 +6,7 @@ import Catalogue from "./components/catalogue/catalogue"
 import Display from "./components/display/display"
 import Calender from "./components/calender/calender"
 import Gallery from "./components/gallery/gallery"
+import Email from "./components/email/email"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Display />
       <Calender />
       <Gallery />
+      <Email />
     </>
   )
 }
