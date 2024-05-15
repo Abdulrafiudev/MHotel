@@ -7,6 +7,7 @@ import Display from "./components/display/display"
 import Calender from "./components/calender/calender"
 import Gallery from "./components/gallery/gallery"
 import Email from "./components/email/email"
+import Footer from "./components/footer/footer"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Calender />
       <Gallery />
       <Email />
+      <Footer />
     </>
   )
 }
