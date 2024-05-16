@@ -8,6 +8,10 @@ function Header() {
     document.querySelector(`.hamburger`).classList.toggle(`active`)
     document.querySelector(`.middle_header_section`).classList.toggle(`active`)
   }
+  function hanle_list_click() {
+    document.querySelector(`.hamburger`).classList.remove(`active`)
+    document.querySelector(`.middle_header_section`).classList.remove(`active`)
+  }
   return (
     <>
       <div className="header">
@@ -24,29 +28,29 @@ function Header() {
               <img src={logo_2} />
               <span>otel</span>
             </div>
-            <div className="middle_header_section" onClick={handle_click}>
+            <div className="middle_header_section">
               <ul>
-                <div className="list_container">
+                <div className="list_container" onClick={hanle_list_click}>
                   <li> Home </li>
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container">
+                <div className="list_container" onClick={hanle_list_click}>
                   <li> Dinning </li>
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container">
+                <div className="list_container" onClick={hanle_list_click}>
                   <li> Gallery </li>
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container">
+                <div className="list_container" onClick={hanle_list_click}>
                   <li> Meetings & Banqueting </li>
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container">
+                <div className="list_container" onClick={hanle_list_click}>
                   <li> Events </li>
                   <div className="green_line"></div>
                 </div>
