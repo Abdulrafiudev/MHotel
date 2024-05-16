@@ -77,4 +77,7 @@
     width: 150px;
     height: 60px;
   }
+  .catalogue_container {
+    height: 35vh;
+  }
 }

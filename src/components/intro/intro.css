@@ -33,4 +33,7 @@
   .green_line_container {
     width: 90%;
   }
+  .intro_container {
+    margin-top: 70px;
+  }
 }
