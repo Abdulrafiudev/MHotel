@@ -26,3 +26,11 @@
   height: 5px;
   border-radius: 2px;
 }
+@media (max-width: 600px) {
+  .image_container {
+    width: 100%;
+  }
+  .green_line_container {
+    width: 90%;
+  }
+}

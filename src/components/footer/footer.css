@@ -48,3 +48,32 @@
   font-size: 14px;
   font-weight: 500;
 }
+@media (max-width: 600px) {
+  .footer_container {
+    margin-top: 200px;
+    height: 160vh;
+  }
+  .footer_detail_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer_container_box {
+    width: 90%;
+  }
+  .detail_2 {
+    font-size: 15px;
+  }
+  .detail_1 {
+    font-size: 24px;
+  }
+
+  .footer_detail_1,
+  .footer_detail_2,
+  .footer_detail_3,
+  .footer_detail_4 {
+    width: 100%;
+  }
+  .footer_detail_4 input {
+    height: 40px;
+  }
+}

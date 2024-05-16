@@ -8,8 +8,10 @@ function Header() {
     <>
       <div className="header">
         <div className="header_text">
-          {" "}
-          Horem ipsum dolor sit amet, consectetur adipiscing elit.
+          <div className="header_text_container">
+            {" "}
+            Horem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
         </div>
         <div className="main_header_container">
           <div className="main_header">

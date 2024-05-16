@@ -42,3 +42,28 @@
   height: 100%;
   width: 100%;
 }
+@media (max-width: 600px) {
+  .calender_container {
+    margin-top: 360px;
+
+    height: 180vh;
+  }
+  .escape_container {
+    width: 90%;
+
+    height: 5%;
+  }
+  .escape_container span {
+    left: 10px;
+  }
+  .calender_gallery {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .left_calender_gallery {
+    width: 90%;
+  }
+  .right_calender_gallery {
+    width: 95%;
+  }
+}

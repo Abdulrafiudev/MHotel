@@ -34,3 +34,16 @@
   font-weight: 500;
   font-size: 20px;
 }
+@media (max-width: 600px) {
+  .email_container {
+    margin-top: 1750px;
+    height: 20vh;
+  }
+  .email_container_box {
+    width: 100%;
+  }
+  .email_container_box input {
+    width: 80%;
+    height: 50px;
+  }
+}

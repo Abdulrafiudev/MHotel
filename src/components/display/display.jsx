@@ -14,7 +14,7 @@ function Display() {
 
           <div className="right_resort_section">
             <span className="right_resort_section_heading">
-              welcome to the best hotel in west African
+              welcome To The Best Botel In West African
             </span>
             <span className="right_resort_section_detail">
               Welcome to marina Haven, your serene escape nestled in the heart
@@ -36,7 +36,7 @@ function Display() {
             </span>
             <a> More Info</a>
           </div>
-          <div className="left_resort_section left_resort_section_pic">
+          <div className="left_resort_section left_resort_section_pic order">
             <img src={resort} className="beach_image resort_image" />
           </div>
         </div>

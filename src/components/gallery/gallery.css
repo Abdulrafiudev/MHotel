@@ -56,3 +56,13 @@
 .gallery_grid_image:hover .image_cover {
   opacity: 0.8;
 }
+@media (max-width: 600px) {
+  .gallery_container {
+    margin-top: 0;
+  }
+  .gallery_grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+}

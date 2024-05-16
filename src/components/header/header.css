@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 30vh;
+  height: 28vh;
   z-index: 1;
 }
 .header_text {
@@ -77,4 +77,25 @@ li {
   font-size: 15px;
   cursor: pointer;
   white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .main_header {
+    width: 90%;
+  }
+  .header_text_container {
+    width: 80%;
+    white-space: nowrap;
+
+    font-size: 11px;
+    text-align: center;
+  }
+  @media (max-width: 360px) {
+    .header_text_container {
+      width: 80%;
+      white-space: nowrap;
+
+      font-size: 10px;
+      text-align: center;
+    }
+  }
 }
