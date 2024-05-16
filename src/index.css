@@ -6,4 +6,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  outline: none;
 }
