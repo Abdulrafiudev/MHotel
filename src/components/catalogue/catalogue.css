@@ -60,3 +60,21 @@
   color: #ffffff;
   font-size: 12px;
 }
+@media (max-width: 600px) {
+  .catalogue_align_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 0;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .catalogue {
+    width: 100%;
+  }
+  .catalogue_box {
+    width: 150px;
+    height: 60px;
+  }
+}
