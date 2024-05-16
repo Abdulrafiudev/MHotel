@@ -156,4 +156,7 @@ li {
     font-size: 10px;
     text-align: center;
   }
+  .middle_header_section.active {
+    top: 18%;
+  }
 }
