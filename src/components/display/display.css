@@ -99,4 +99,9 @@
   .diplay_green_line {
     width: 100%;
   }
+  @media (max-width: 320px) {
+    .resort_container {
+      gap: 200px;
+    }
+  }
 }

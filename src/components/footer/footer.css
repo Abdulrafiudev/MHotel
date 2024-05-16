@@ -51,7 +51,7 @@
 @media (max-width: 600px) {
   .footer_container {
     margin-top: 200px;
-    height: 160vh;
+    height: 150vh;
   }
   .footer_detail_container {
     flex-direction: column;
@@ -61,7 +61,7 @@
     width: 90%;
   }
   .detail_2 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .detail_1 {
     font-size: 24px;
@@ -75,5 +75,15 @@
   }
   .footer_detail_4 input {
     height: 40px;
+  }
+}
+@media (max-width: 360px) {
+  .footer_container {
+    height: 160vh;
+  }
+}
+@media (max-width: 320px) {
+  .footer_container {
+    height: 230vh;
   }
 }

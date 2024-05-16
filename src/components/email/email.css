@@ -47,3 +47,12 @@
     height: 50px;
   }
 }
+@media (max-width: 320px) {
+  .email_container {
+    margin-top: 2050px;
+    height: 31vh;
+  }
+  .email_container_box {
+    gap: 10px;
+  }
+}
