@@ -2,6 +2,7 @@ import React from "react"
 import "./header.css"
 import logo_1 from "../../assets/images/logo_1.png"
 import logo_2 from "../../assets/images/logo_2.png"
+import { Link } from "react-scroll"
 
 function Header() {
   function handle_click() {
@@ -30,28 +31,47 @@ function Header() {
             </div>
             <div className="middle_header_section">
               <ul>
-                <div className="list_container" onClick={hanle_list_click}>
-                  <li> Home </li>
+                <div className="list_container">
+                  <Link to="Home" smooth={true} spy={true}>
+                    {" "}
+                    <li onClick={hanle_list_click}> Home </li>
+                  </Link>
+
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container" onClick={hanle_list_click}>
-                  <li> Dinning </li>
+                <div className="list_container">
+                  <Link to="catalogue" smooth={true} spy={true}>
+                    {" "}
+                    <li onClick={hanle_list_click}> Dinning </li>
+                  </Link>
+
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container" onClick={hanle_list_click}>
-                  <li> Gallery </li>
+                <div className="list_container">
+                  <Link to="gallery" smooth={true} spy={true}>
+                    {" "}
+                    <li onClick={hanle_list_click}> Gallery </li>
+                  </Link>
+
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container" onClick={hanle_list_click}>
-                  <li> Meetings & Banqueting </li>
+                <div className="list_container">
+                  <Link to="display" smooth={true} spy={true}>
+                    <li onClick={hanle_list_click}> Meetings & Banqueting </li>
+                  </Link>
+
                   <div className="green_line"></div>
                 </div>
 
-                <div className="list_container" onClick={hanle_list_click}>
-                  <li> Events </li>
+                <div className="list_container">
+                  <Link to="calender" smooth={true} spy={true}>
+                    {" "}
+                    <li onClick={hanle_list_click}> Events </li>
+                  </Link>
+
                   <div className="green_line"></div>
                 </div>
               </ul>

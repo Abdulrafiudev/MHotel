@@ -14,11 +14,28 @@ function App() {
     <>
       <div className="app_container">
         <Header />
-        <Intro />
-        <Catalogue />
-        <Display />
-        <Calender />
-        <Gallery />
+        <div id="Home">
+          <Intro />
+        </div>
+        <div id="catalogue">
+          {" "}
+          <Catalogue />
+        </div>
+
+        <div id="display">
+          <Display />
+        </div>
+
+        <div id="calender">
+          {" "}
+          <Calender />
+        </div>
+
+        <div id="gallery">
+          {" "}
+          <Gallery />
+        </div>
+
         <Email />
         <Footer />
       </div>
