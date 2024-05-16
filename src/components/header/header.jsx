@@ -4,6 +4,10 @@ import logo_1 from "../../assets/images/logo_1.png"
 import logo_2 from "../../assets/images/logo_2.png"
 
 function Header() {
+  function handle_click() {
+    document.querySelector(`.hamburger`).classList.toggle(`active`)
+    document.querySelector(`.middle_header_section`).classList.toggle(`active`)
+  }
   return (
     <>
       <div className="header">
@@ -20,7 +24,7 @@ function Header() {
               <img src={logo_2} />
               <span>otel</span>
             </div>
-            <div className="middle_header_section">
+            <div className="middle_header_section" onClick={handle_click}>
               <ul>
                 <div className="list_container">
                   <li> Home </li>
@@ -50,6 +54,11 @@ function Header() {
             </div>
             <div className="right_header_section">
               <a> Book Now</a>
+              <div className="hamburger" onClick={handle_click}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+              </div>
             </div>
           </div>
         </div>
