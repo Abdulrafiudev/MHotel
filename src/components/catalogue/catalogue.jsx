@@ -33,9 +33,9 @@ function Catalogue() {
     <>
       <div className="catalogue_container">
         <motion.div
-          initial={{ opacity: 0, x: "-100vw" }}
+          initial={{ opacity: 0, x: "-100%" }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
           className="catalogue"
         >
           <span> Marina Haven</span>

@@ -10,8 +10,8 @@ function Display() {
       <div className="resort_container">
         <div className="resort_1">
           <motion.div
-            initial={{ opacity: 0, x: "-100vw" }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: "-100%" }}
+            whileInView={{ opacity: 1, x: "0" }}
             transition={{ duration: 1 }}
             className="left_resort_section"
           >
@@ -19,8 +19,8 @@ function Display() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: "100vw" }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: "100%" }}
+            whileInView={{ opacity: 1, x: "0" }}
             transition={{ duration: 1 }}
             className="right_resort_section"
           >
@@ -38,8 +38,8 @@ function Display() {
         </div>
         <div className="resort_2">
           <motion.div
-            initial={{ opacity: 0, x: "-100vw" }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: "-100%" }}
+            whileInView={{ opacity: 1, x: "0" }}
             transition={{ duration: 1 }}
             className="right_resort_section"
           >
@@ -53,8 +53,8 @@ function Display() {
             <a> More Info</a>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: "100vw" }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: "100%" }}
+            whileInView={{ opacity: 1, x: "0" }}
             transition={{ duration: 1 }}
             className="left_resort_section left_resort_section_pic order"
           >

@@ -8,6 +8,7 @@ import gallery_5 from "../../assets/images/gallery_5.jpg"
 import gallery_6 from "../../assets/images/gallery_6.jpg"
 import gallery_7 from "../../assets/images/gallery_7.jpg"
 import beach from "../../assets/images/beach.jpg"
+import { motion } from "framer-motion"
 
 function Gallery() {
   let gallery_cart = [
@@ -51,12 +52,18 @@ function Gallery() {
         <div className="gallery_grid">
           {gallery_cart.map((gallery, index) => {
             return (
-              <div className="gallery_grid_image" key={index}>
+              <motion.div
+                initial={{ opacity: 0, x: "-100%" }}
+                whileInView={{ opacity: 1, x: "0" }}
+                transition={{ duration: 1 }}
+                className="gallery_grid_image"
+                key={index}
+              >
                 <img src={gallery.image} />
                 <div className="image_cover">
                   <span> {gallery.name}</span>
                 </div>
-              </div>
+              </motion.div>
             )
           })}
         </div>

@@ -7,10 +7,10 @@ function Intro() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, x: "100vw" }}
+        initial={{ opacity: 0, x: "100%" }}
         whileInView={{ x: "0", opacity: 1 }}
         exit={{ opacity: 0, x: "-100vw" }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
         className="intro_container"
       >
         <div className="image_container">
