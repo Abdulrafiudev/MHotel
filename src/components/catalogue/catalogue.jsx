@@ -4,6 +4,7 @@ import vector_1 from "../../assets/images/vector_1.png"
 import vector_2 from "../../assets/images/vector_2.png"
 import vector_3 from "../../assets/images/vector_3.png"
 import vector_4 from "../../assets/images/vector_4.png"
+import { motion } from "framer-motion"
 
 function Catalogue() {
   let catalogue_cart = [
@@ -31,7 +32,12 @@ function Catalogue() {
   return (
     <>
       <div className="catalogue_container">
-        <div className="catalogue">
+        <motion.div
+          initial={{ opacity: 0, x: "-100vw" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="catalogue"
+        >
           <span> Marina Haven</span>
           <div className="catalogue_box_container">
             <div className="catalogue_align_box">
@@ -48,7 +54,7 @@ function Catalogue() {
               })}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   )

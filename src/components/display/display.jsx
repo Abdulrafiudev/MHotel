@@ -2,17 +2,28 @@ import React from "react"
 import "./display.css"
 import beach from "../../assets/images/beach.jpg"
 import resort from "../../assets/images/resort.jpg"
+import { motion } from "framer-motion"
 
 function Display() {
   return (
     <>
       <div className="resort_container">
         <div className="resort_1">
-          <div className="left_resort_section">
+          <motion.div
+            initial={{ opacity: 0, x: "-100vw" }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="left_resort_section"
+          >
             <img src={beach} className="beach_image" />
-          </div>
+          </motion.div>
 
-          <div className="right_resort_section">
+          <motion.div
+            initial={{ opacity: 0, x: "100vw" }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="right_resort_section"
+          >
             <span className="right_resort_section_heading">
               welcome To The Best Botel In West African
             </span>
@@ -23,10 +34,15 @@ function Display() {
               introduce ourselves.{" "}
             </span>
             <a> More Info</a>
-          </div>
+          </motion.div>
         </div>
         <div className="resort_2">
-          <div className="right_resort_section">
+          <motion.div
+            initial={{ opacity: 0, x: "-100vw" }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="right_resort_section"
+          >
             <span className="right_resort_section_heading">Our Story</span>
             <span className="right_resort_section_detail">
               At marina Haven, we’ve crafted an oasis where relaxation and
@@ -35,10 +51,15 @@ function Display() {
               memories, and explorers embark on unforgettable adventures.
             </span>
             <a> More Info</a>
-          </div>
-          <div className="left_resort_section left_resort_section_pic order">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "100vw" }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="left_resort_section left_resort_section_pic order"
+          >
             <img src={resort} className="beach_image resort_image" />
-          </div>
+          </motion.div>
         </div>
         <div className="diplay_green_line">
           <div className="diplay_green_line"></div>
