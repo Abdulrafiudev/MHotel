@@ -1,12 +1,17 @@
-import React from "react"
+import React, { useRef } from "react"
 import "./catalogue.css"
 import vector_1 from "../../assets/images/vector_1.png"
 import vector_2 from "../../assets/images/vector_2.png"
 import vector_3 from "../../assets/images/vector_3.png"
 import vector_4 from "../../assets/images/vector_4.png"
-import { motion } from "framer-motion"
+import { gsap } from "gsap"
+import { useGSAP } from "@gsap/react"
+import { Power0, Power1, Power2, Power4 } from "gsap"
+
+let tl = gsap.timeline()
 
 function Catalogue() {
+  let catalogue = useRef(null)
   let catalogue_cart = [
     {
       image: vector_1,
@@ -29,15 +34,28 @@ function Catalogue() {
       text_2: "Get Comfort",
     },
   ]
+  useGSAP(() => {
+    let catalogue_heading = catalogue.current.firstElementChild
+    console.log(catalogue_heading)
+    tl.from(catalogue_heading.firstElementChild, {
+      xPercent: 100,
+      opacity: 0,
+      duration: 1,
+    }).from(
+      catalogue_heading.lastElementChild,
+      {
+        xPercent: -100,
+        opacity: 0,
+        duration: 1,
+        delay: 0.3,
+      },
+      0.2
+    )
+  })
   return (
     <>
-      <div className="catalogue_container">
-        <motion.div
-          initial={{ opacity: 0, x: "100%" }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
-          className="catalogue"
-        >
+      <div className="catalogue_container" ref={catalogue}>
+        <div className="catalogue">
           <span> Marina Haven</span>
           <div className="catalogue_box_container">
             <div className="catalogue_align_box">
@@ -54,7 +72,7 @@ function Catalogue() {
               })}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </>
   )
