@@ -12,7 +12,7 @@ function Display() {
           <motion.div
             initial={{ opacity: 0, x: "-100%" }}
             whileInView={{ opacity: 1, x: "0" }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.5 }}
             className="left_resort_section"
           >
             <img src={beach} className="beach_image" />
@@ -21,7 +21,7 @@ function Display() {
           <motion.div
             initial={{ opacity: 0, x: "100%" }}
             whileInView={{ opacity: 1, x: "0" }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.5 }}
             className="right_resort_section"
           >
             <span className="right_resort_section_heading">
@@ -40,7 +40,7 @@ function Display() {
           <motion.div
             initial={{ opacity: 0, x: "-100%" }}
             whileInView={{ opacity: 1, x: "0" }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.5 }}
             className="right_resort_section"
           >
             <span className="right_resort_section_heading">Our Story</span>
@@ -55,7 +55,7 @@ function Display() {
           <motion.div
             initial={{ opacity: 0, x: "100%" }}
             whileInView={{ opacity: 1, x: "0" }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.5 }}
             className="left_resort_section left_resort_section_pic order"
           >
             <img src={resort} className="beach_image resort_image" />

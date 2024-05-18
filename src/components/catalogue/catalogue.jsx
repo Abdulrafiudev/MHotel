@@ -39,7 +39,7 @@ function Catalogue({ tl }) {
       xPercent: 100,
       opacity: 0,
       duration: 1,
-      delay: 0.3,
+      delay: 0.1,
     }).from(catalogue_heading.lastElementChild, {
       xPercent: -100,
       opacity: 0,
