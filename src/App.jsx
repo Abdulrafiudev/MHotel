@@ -8,6 +8,9 @@ import Calender from "./components/calender/calender"
 import Gallery from "./components/gallery/gallery"
 import Email from "./components/email/email"
 import Footer from "./components/footer/footer"
+import gsap from "gsap"
+
+let tl = gsap.timeline()
 
 function App() {
   return (
@@ -15,11 +18,11 @@ function App() {
       <div className="app_container">
         <Header />
         <div id="Home">
-          <Intro />
+          <Intro tl={tl} />
         </div>
         <div id="catalogue">
           {" "}
-          <Catalogue />
+          <Catalogue tl={tl} />
         </div>
 
         <div id="display">
@@ -33,7 +36,7 @@ function App() {
 
         <div id="gallery">
           {" "}
-          <Gallery />
+          <Gallery tl={tl} />
         </div>
 
         <Email />

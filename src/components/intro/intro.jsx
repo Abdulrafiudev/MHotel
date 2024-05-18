@@ -5,9 +5,7 @@ import gsap from "gsap"
 import { Power3, Power2, Power0, Power1 } from "gsap"
 import { useGSAP } from "@gsap/react"
 
-let tl = gsap.timeline()
-
-function Intro() {
+function Intro({ tl }) {
   let container = useRef(null)
   useGSAP(() => {
     let image_container = container.current.firstElementChild

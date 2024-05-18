@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import "./gallery.css"
 import gallery_1 from "../../assets/images/gallery_1.jpg"
 import gallery_2 from "../../assets/images/gallery_2.jpg"
@@ -8,9 +8,9 @@ import gallery_5 from "../../assets/images/gallery_5.jpg"
 import gallery_6 from "../../assets/images/gallery_6.jpg"
 import gallery_7 from "../../assets/images/gallery_7.jpg"
 import beach from "../../assets/images/beach.jpg"
-import { motion } from "framer-motion"
+import { easeInOut, motion } from "framer-motion"
 
-function Gallery() {
+function Gallery({ tl }) {
   let gallery_cart = [
     {
       image: gallery_1,
@@ -53,9 +53,9 @@ function Gallery() {
           {gallery_cart.map((gallery, index) => {
             return (
               <motion.div
-                initial={{ opacity: 0, x: "-100%" }}
-                whileInView={{ opacity: 1, x: "0" }}
+                whileHover={{ scale: 1.1 }}
                 transition={{ duration: 1 }}
+                layout
                 className="gallery_grid_image"
                 key={index}
               >

@@ -6,11 +6,9 @@ import vector_3 from "../../assets/images/vector_3.png"
 import vector_4 from "../../assets/images/vector_4.png"
 import { gsap } from "gsap"
 import { useGSAP } from "@gsap/react"
-import { Power0, Power1, Power2, Power4 } from "gsap"
+import { Power0, Power1, Power2, Power3, Power4 } from "gsap"
 
-let tl = gsap.timeline()
-
-function Catalogue() {
+function Catalogue({ tl }) {
   let catalogue = useRef(null)
   let catalogue_cart = [
     {
@@ -41,16 +39,12 @@ function Catalogue() {
       xPercent: 100,
       opacity: 0,
       duration: 1,
-    }).from(
-      catalogue_heading.lastElementChild,
-      {
-        xPercent: -100,
-        opacity: 0,
-        duration: 1,
-        delay: 0.3,
-      },
-      0.2
-    )
+      delay: 0.3,
+    }).from(catalogue_heading.lastElementChild, {
+      xPercent: -100,
+      opacity: 0,
+      duration: 1,
+    })
   })
   return (
     <>
